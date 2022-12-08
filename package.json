@@ -1,0 +1,30 @@
+{
+  "name": "botwa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "AhmadAmin",
+  "license": "ISC",
+  "dependencies": {
+    "@adiwajshing/baileys": "^4.4.0",
+    "@adiwajshing/keyed-db": "^0.2.4",
+    "axios": "^1.2.1",
+    "brainly-scraper": "^1.0.3",
+    "cfonts": "^3.1.1",
+    "chalk": "^4.1.2",
+    "clui": "^0.3.6",
+    "fluent-ffmpeg": "^2.1.2",
+    "fs": "^0.0.1-security",
+    "moment-timezone": "^0.5.39",
+    "node-fetch": "^2.6.7",
+    "pino": "^8.7.0",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "devDependencies": {
+    "@types/fluent-ffmpeg": "^2.1.20"
+  }
+}

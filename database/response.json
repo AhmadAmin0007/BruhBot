@@ -1,0 +1,14 @@
+{
+  "wait": "Mohon tunggu..",
+  "error": "Maaf, terjadi masalah.",
+  "owner": "Hanya owner yang dapat menggunakan perintah ini.",
+  "adminGc": "Hanya admin group yang dapat menggunakan perintah ini.",
+  "user": "Maaf, anda belum verify, silahkan verify dengan cara ketik {prefix}verify",
+  "prem": "Hanya user premium yang dapat menggunakan perintah ini.\nChat owner jika ingin membeli premium.",
+  "grub": "Hanya dapat digunakan dalam grub.",
+  "priv": "Hanya dapat digunakan dalam private chat",
+  "bot": "Untuk menggunakan perintah ini, bot harus admin.",
+  "ver": "Berhasil verify, silahkan baca *rules*, Jika sudah ketik {prefix}menu",
+  "alVer": "Anda sudah pernah verify.",
+  "nsfw": "Nsfw group belum aktif."
+}
