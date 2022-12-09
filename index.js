@@ -785,7 +785,7 @@ try {
           console.log(color("Silahkan scan qr code dibawah ini..", "yellow"));
         }
         if (connection === "close") {
-          //connectToWhatsApp();
+          connectToWhatsApp();
         }
         if (connection === "connecting") {
           console.log(color("Connecting..", "yellow"));
