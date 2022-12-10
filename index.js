@@ -52,12 +52,12 @@ try {
     });
   }
 
-  const store = makeInMemoryStore({ logger: logg().child({ level: "fatal", stream: "store" }) });
+  const store = makeInMemoryStore({ logger: logg().child({ level: "silent", stream: "store" }) });
 
   const connectToWhatsApp = async () => {
     const conn = makeWASocket({
       printQRInTerminal: true,
-      logger: logg({ level: "fatal" }),
+      logger: logg({ level: "silent" }),
       auth: state,
       browser: [setting.botName, "Safari", "1.0.0"]
     });
@@ -785,6 +785,7 @@ try {
           console.log(color("Silahkan scan qr code dibawah ini..", "yellow"));
         }
         if (connection === "close") {
+          console.log(DisconnectReason);
           connectToWhatsApp();
         }
         if (connection === "connecting") {
@@ -804,6 +805,7 @@ try {
           }, 30000);
         }
       } catch (e) {
+        console.log(e);
         connectToWhatsApp();
       }
     });
@@ -846,8 +848,10 @@ try {
     return conn;
   }
 
-  connectToWhatsApp().catch(err => console.log("Error"));
+  connectToWhatsApp().catch(err => console.log("Error: ", err));
 } catch (e) {
   console.log("Ada yang error.");
   console.error(e);
 }
+
+require("http").createServer((_, res) => res.end("Uptime!")).listen(8080);
